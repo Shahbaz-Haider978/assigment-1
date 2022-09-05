@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        a{
+            display: inline-block;
+            padding:10px 15px;
+            border: 1px solid black;
+            text-decoration: none;
+            color: #000;
+            position: relative;
+            z-index: 1;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        a p{
+            position: relative;
+            z-index: 3;
+
+        }
+        a span{
+            display: inline-block;
+            background-color: aqua;
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        a:hover span{
+            width: 100%;
+            transition: width 3s;
+        }
+    </style>
+</head>
+<body>
+    
+    <a href="#" class="btn">
+        <span></span>
+        <p>Button</p>
+    </a>
+</body>
+</html>
